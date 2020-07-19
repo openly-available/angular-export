@@ -25,4 +25,4 @@ jobs:
       run: npm install -g surge
 
     - name: Deploy to Surge
-      run:  surge ./dist https://angular-export-excel.surge.sh/ --token 56746caab160b942ed59528dbacb4c4f
+      run:  surge ./dist/angular-export-excel https://angular-export-excel.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
