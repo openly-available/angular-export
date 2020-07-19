@@ -2,7 +2,7 @@ name: Deploy to surge
 
 on:
   push:
-    branches: [ master ]
+    branches: [ develop ]
 
 jobs:
   build:
@@ -12,11 +12,11 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Setup Node
-      uses: actions/setup-node@v2-beta
+      uses: actions/setup-node@v1
       with:
           node-version: 12
 
-    - name: Build React App
+    - name: Build Angular App
       run: |
         npm install # Install Dependencies
         CI=false npm run build # CI=false to ignore warnings
@@ -25,4 +25,4 @@ jobs:
       run: npm install -g surge
 
     - name: Deploy to Surge
-      run:  surge ./build https://angular-export-excel.surge.sh/ --token 56746caab160b942ed59528dbacb4c4f
+      run:  surge ./dist https://angular-export-excel.surge.sh/ --token 56746caab160b942ed59528dbacb4c4f
