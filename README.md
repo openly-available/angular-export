@@ -1,1 +1,5 @@
-# export excel using xlsx library in angular from json object
+# AngularExportExcel
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.3.
+
+## Angular Export to excel using xlsx from json object.
