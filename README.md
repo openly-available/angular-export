@@ -1,5 +1,1 @@
-# Export excel from json object in angluar.
-
-Exporting json object into excel in the client side.
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-export)
+# export excel using xlsx library in angular from json object
